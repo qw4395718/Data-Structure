@@ -30,7 +30,7 @@ typedef struct
 //	for (int i = 0; T[i] != NULL;i++)
 //	printf("%d", T[i]);
 //}
-TElemType Nil = 0;
+TElemType Nil = 0; /*  设整型以0为空 */
 
 Status InitBiTree(SqBiTree T)
 {
@@ -69,13 +69,39 @@ Status BiTreeEmpty(SqBiTree T)
 		return OK;
 }
 
+/*  初始条件:二叉树存在.操作结果:返回T的深度  */
 int BiTreeDepth(SqBiTree T)
 {
 	int i, j = -1;
 	for (i = MAX_TREE_SIZE - 1; i >= 0; i--)
-	{
-
+	{//从数组的尾部向前搜索,避免出现空节点的(PS:这个与前面二叉树的检验:当前节点非空节点并且其父母不为空节点相违背)
+		if (T[i] != Nil)
+			break;
+		i++;
+		do
+		j++;
+		while (i >= powl(2, j));//父母与子的关系(非数组下标):Parent_Node = (int)Children_Node /2;
+		return j;
 	}
+}
+
+/*  初始条件:二叉树存在 */
+/*  操作结果:当T不空时,用e返回T的根,返回OK.否则返回ERROR*/
+Status Root(SqBiTree T, TElemType *e)
+{
+	if (T[0] != 0)
+	{
+		*e = T[0];
+		return OK;
+	}
+	return ERROR;
+}
+
+/* 初始条件:二叉树T存在,e是T中某个结点(的位置) */
+/* 操作结果:返回处于位置e的结点的值 */
+Status Value(SqBiTree T, Position e)
+{
+
 }
 
 int _tmain(int argc, _TCHAR* argv[])

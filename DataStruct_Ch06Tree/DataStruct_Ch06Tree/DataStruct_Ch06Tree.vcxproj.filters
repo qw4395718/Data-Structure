@@ -32,19 +32,19 @@
     <ClCompile Include="DataStruct_Ch06Tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ZYF\Desktop\大话数据结构\源代码\Windows版\第6章树\01二叉树顺序结构实现_BiTreeArray.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\ZYF\Desktop\大话数据结构\源代码\Windows版\第6章树\02二叉树链式结构实现_BiTreeLink.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\ZYF\Desktop\大话数据结构\源代码\Windows版\第6章树\03线索二叉树_ThreadBinaryTree.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\ZYF\Desktop\大话数据结构\源代码\Windows版\第6章树\6课程代码.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Ch06test01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="01二叉树顺序结构实现_BiTreeArray.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="02二叉树链式结构实现_BiTreeLink.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="03线索二叉树_ThreadBinaryTree.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="6课程代码.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
