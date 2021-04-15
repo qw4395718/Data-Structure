@@ -188,6 +188,20 @@ void PreTraverse(SqBiTree T, int e)
 		PreTraverse(T, 2 * e + 2);
 }
 
+/* 初始条件: 二叉树存在 */
+/* 操作结果: 先序遍历T。 */
+Status PreOrderTraverse(SqBiTree T)
+{
+	if (!BiTreeEmpty(T))
+	{
+		PreTraverse(T, 0);
+	}
+	printf("\n");
+	return OK;
+}
+
+
+
 
 
 int _tmain(int argc, _TCHAR* argv[])
